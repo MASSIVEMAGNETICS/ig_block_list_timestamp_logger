@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  width: 400px;
+  min-height: 300px;
+  background: #fafafa;
+}
+
+.container {
+  padding: 15px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  background: white;
+  color: #262626;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #f0f0f0;
+}
+
+button:active {
+  background: #e0e0e0;
+}
+
+#logContainer {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 15px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#emptyMessage {
+  color: #8e8e8e;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+}
+
+#logList {
+  list-style: none;
+}
+
+#logList li {
+  padding: 10px;
+  border-bottom: 1px solid #efefef;
+  font-size: 13px;
+}
+
+#logList li:last-child {
+  border-bottom: none;
+}
+
+.log-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.log-action {
+  font-weight: 600;
+  color: #262626;
+}
+
+.log-action.blocked {
+  color: #ed4956;
+}
+
+.log-action.unblocked {
+  color: #0095f6;
+}
+
+.log-username {
+  color: #00376b;
+  font-weight: 500;
+}
+
+.log-timestamp {
+  color: #8e8e8e;
+  font-size: 12px;
+}

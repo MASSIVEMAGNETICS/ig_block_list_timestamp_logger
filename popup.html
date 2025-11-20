@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block Logger</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Instagram Block Logger</h1>
+    <div class="controls">
+      <button id="clearBtn">Clear Logs</button>
+      <button id="exportBtn">Export</button>
+    </div>
+    <div id="logContainer">
+      <p id="emptyMessage">No blocks logged yet. Visit Instagram and block/unblock users to see logs here.</p>
+      <ul id="logList"></ul>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
